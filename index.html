@@ -21,7 +21,9 @@
             <table border="1" width="100%">
                 <tr>
                     <th>
-                        <a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a>
+                        <h3><a href="https://dexonline.ro/intrare/nume/38239" target="_blank">
+                            Nume
+                        </a></h3>
                     </th>
                     <th>
                         <h4>Sex</h4>
@@ -92,62 +94,66 @@
                     </td>
                 </tr>
             </table>
-            <fieldset>
-                <legend>
-                    Opțiuni Tabără
-                </legend>
-                <label>Tip de tabără:</label>
-                <select name="tip-tabara" multiple>
-                    <option value="aventura">Aventură</option>
-                    <option value="cultural" selected>Cultural</option>
-                    <option value="sportiv">Sportiv</option>
-                </select>
-                <br>
-                <label for="observatii">Observații:</label>
-                <textarea id="observatii" name="observatii" rows="4" cols="50" readonly></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    Preferințe
-                </legend>
-                <table border="1" width="100%">
-                    <tr>
-                        <th>Alimentare</th>
-                        <th>Sportive</th>
-                        <th>Marimea camerei</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="vegetarian" value="da">
-                            Vegetarian<br>
-                            <input type="checkbox" name="fara-gluten" value="da"> Fără
-                            gluten<br>
-                            <input type="checkbox" name="fara-lactate" value="da"> Fără
-                            lactate
-                        </td>
-                        <td>
-                            <input type="checkbox" name="fotbal" value="da"> Fotbal<br>
-                            <input type="checkbox" name="inot" value="da"> Înot<br>
-                            <input type="checkbox" name="ciclism" value="da"> Ciclism
-                        </td>
-                        <td>
-                            <input type="radio" name="camera" value="single" checked> 3
-                            paturi<br>
-                            <input type="radio" name="camera" value="dubla"> 4 paturi<br>
-                            <input type="radio" name="camera" value="tripla"> 6 paturi<br>
-                            <input type="radio" id="camera-altele" name="camera"> Altele
-                            <input type="text" id="numar-paturi" name="numar-paturi">
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
-            <br>
-            <center>
-                <input type="submit" value="Trimite" disabled>
-                <input type="reset" value="Resetează">
-            </center>
         </fieldset>
+
+        <fieldset>
+            <legend>
+                Opțiuni Tabără
+            </legend>
+            <label>Tip de tabără:</label>
+            <select name="tip-tabara" multiple>
+                <option value="aventura">Aventură</option>
+                <option value="cultural" selected>Cultural</option>
+                <option value="sportiv">Sportiv</option>
+            </select>
+            <br>
+            <label for="observatii">Observații:</label>
+            <textarea id="observatii" name="observatii" rows="4" cols="50" readonly></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Preferințe
+            </legend>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Alimentare</th>
+                    <th>Sportive</th>
+                    <th>Marimea camerei</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="vegetarian" value="da">
+                        Vegetarian<br>
+                        <input type="checkbox" name="fara-gluten" value="da"> Fără
+                        gluten<br>
+                        <input type="checkbox" name="fara-lactate" value="da"> Fără
+                        lactate
+                    </td>
+                    <td>
+                        <input type="checkbox" name="fotbal" value="da"> Fotbal<br>
+                        <input type="checkbox" name="inot" value="da"> Înot<br>
+                        <input type="checkbox" name="ciclism" value="da"> Ciclism
+                    </td>
+                    <td>
+                        <input type="radio" name="camera" value="single" checked> 3
+                        paturi<br>
+                        <input type="radio" name="camera" value="dubla"> 4 paturi<br>
+                        <input type="radio" name="camera" value="tripla"> 6 paturi<br>
+                        <input type="radio" id="camera-altele" name="camera"> Altele
+                        <input type="text" id="numar-paturi" name="numar-paturi">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        <center>
+            <input type="submit" value="Trimite" disabled>
+            <input type="reset" value="Resetează">
+        </center>
     </form>
+
     <fieldset>
         <legend>
             Listă echipamente necesare
