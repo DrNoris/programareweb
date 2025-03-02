@@ -1,35 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <title>Lab1</title>
 </head>
-<body bgcolor="#f0f0f0">
+<body>
     <center><h1>Formular de Înscriere</h1></center>
     <center><h2>pentru tabăra de vară</h2></center>
     <form method="post" action="#">
         <fieldset>
-            <legend><h3>Informații Personale</h3></legend>
+            <legend>Informații Personale</legend>
             <table border="1" width="100%">
                 <tr>
-                    <th>
-                        <a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a>
-                    </th>
-                    <th>
-                        Sex
-                    </th>
-                    <th>
-                        Data nașterii
-                    </th>
+                    <th><h3><a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a></h3></th>
+                    <th><h4>Sex</h4></th>
+                    <th><h5>Data nașterii</h5></th>
                 </tr>
                 <tr>
                     <td valign="top">
-                        <div>
-                            <label for="prenume"><strong>Prenume:</strong></label>
-                            <input type="text" id="prenume" name="prenume" maxlength="30" size="20">
-                            <label for="nume"><strong>Nume:</strong></label>
-                            <input type="text" id="nume" name="nume" maxlength="20" size="40">
-                        </div>
+                        <label for="prenume"><strong>Prenume:</strong></label>
+                        <input type="text" id="prenume" name="prenume" maxlength="30" size="20">
+                        <label for="nume"><strong>Nume:</strong></label>
+                        <input type="text" id="nume" name="nume" maxlength="20" size="40">
                     </td>
                     <td valign="top">
                         <input type="radio" id="masculin" name="sex" value="masculin">
@@ -38,14 +31,12 @@
                         <label for="feminin">Feminin</label>
                     </td>
                     <td valign="top">
-                        <div>
-                            <label for="date"><b>Alege data nașterii</b></label>
-                            <input type="date" id="data" name="data">
-                        </div>
+                        <label for="data"><b>Alege data nașterii</b></label>
+                        <input type="date" id="data" name="data">
                     </td>
                 </tr>
                 <tr>
-                    <th colspan="3">Adresă</th>
+                    <th colspan="3"><h6>Adresă</h6></th>
                 </tr>
                 <tr>
                     <td colspan="3">
@@ -83,8 +74,9 @@
                 </tr>
             </table>
         </fieldset>
+
         <fieldset>
-            <legend><h4>Opțiuni Tabără</h4></legend>
+            <legend>Opțiuni Tabără</legend>
             <label>Tip de tabără:</label>
             <select name="tip-tabara" multiple>
                 <option value="aventura">Aventură</option>
@@ -95,8 +87,9 @@
             <label for="observatii">Observații:</label>
             <textarea id="observatii" name="observatii" rows="4" cols="50" readonly></textarea>
         </fieldset>
+
         <fieldset>
-            <legend><h5>Preferințe</h5></legend>
+            <legend>Preferințe</legend>
             <table border="1" width="100%">
                 <tr>
                     <th>Alimentare</th>
@@ -119,18 +112,21 @@
                         <input type="radio" name="camera" value="dubla"> 4 paturi<br>
                         <input type="radio" name="camera" value="tripla"> 6 paturi<br>
                         <input type="radio" id="camera-altele" name="camera"> Altele
-                        <input type="number" id="numar-paturi" name="numar-paturi" min="1" max="12">                    </td>
+                        <input type="number" id="numar-paturi" name="numar-paturi" min="1" max="12" step="2">
+                    </td>
                 </tr>
             </table>
         </fieldset>
+
         <br>
         <center>
             <input type="submit" value="Trimite" disabled>
             <input type="reset" value="Resetează">
         </center>
     </form>
+
     <fieldset>
-        <legend><h6>Listă echipamente necesare</h6></legend>
+        <legend>Listă echipamente necesare</legend>
         <p><i>Listă obligatorie de obiecte</i></p>
         <ul>
             <li>Îmbrăcăminte adecvată
@@ -154,14 +150,11 @@
             </li>
         </ul>
     </fieldset>
+
     <br>
     <center>
         <img src="tabara.jpg" alt="Tabăra de vară" width="600" height="400">
     </center>
 </body>
+
 </html>
-
-
-<!--   şi (absolut toate) 
-următoarele atribute:       
-max    -->
