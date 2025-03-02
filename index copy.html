@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lab1</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <center><h1>Formular de Înscriere</h1></center>
+    <center><h2>pentru tabăra de vară</h2></center>
+    <form method="post" action="#">
+        <fieldset>
+            <legend><h3>Informații Personale</h3></legend>
+            <table border="1" width="100%">
+                <tr>
+                    <th>
+                        <a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a>
+                    </th>
+                    <th>
+                        Sex
+                    </th>
+                    <th>
+                        Data nașterii
+                    </th>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <div>
+                            <label for="prenume"><strong>Prenume:</strong></label>
+                            <input type="text" id="prenume" name="prenume" maxlength="30" size="20">
+                            <label for="nume"><strong>Nume:</strong></label>
+                            <input type="text" id="nume" name="nume" maxlength="20" size="40">
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <input type="radio" id="masculin" name="sex" value="masculin">
+                        <label for="masculin">Masculin</label>
+                        <input type="radio" id="feminin" name="sex" value="feminin">
+                        <label for="feminin">Feminin</label>
+                    </td>
+                    <td valign="top">
+                        <div>
+                            <label for="date"><b>Alege data nașterii</b></label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Adresă</th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <fieldset>
+                            <table align="center" border="5" width="40%">
+                                <tr>
+                                    <td>
+                                        <label for="oras"><strong>Oraș:</strong></label>
+                                        <input type="text" id="oras" name="oras" maxlength="25">
+                                    </td>
+                                    <td>
+                                        <label for="strada"><strong>Stradă:</strong></label>
+                                        <input type="text" id="strada" name="strada" maxlength="25">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="judet"><strong>Județ:</strong></label>
+                                        <input type="text" id="judet" name="judet" maxlength="25">
+                                    </td>
+                                    <td>
+                                        <label for="numar"><strong>Număr:</strong></label>
+                                        <input type="number" id="numar" name="numar" maxlength="25">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="cod-postal"><strong>Cod Poștal:</strong></label>
+                                        <input type="number" id="cod-postal" name="cod-postal" maxlength="10" step="1">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><h4>Opțiuni Tabără</h4></legend>
+            <label>Tip de tabără:</label>
+            <select name="tip-tabara" multiple>
+                <option value="aventura">Aventură</option>
+                <option value="cultural" selected>Cultural</option>
+                <option value="sportiv">Sportiv</option>
+            </select>
+            <br>
+            <label for="observatii">Observații:</label>
+            <textarea id="observatii" name="observatii" rows="4" cols="50" readonly></textarea>
+        </fieldset>
+        <fieldset>
+            <legend><h5>Preferințe</h5></legend>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Alimentare</th>
+                    <th>Sportive</th>
+                    <th>Marimea camerei</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="vegetarian" value="da"> Vegetarian<br>
+                        <input type="checkbox" name="fara-gluten" value="da"> Fără gluten<br>
+                        <input type="checkbox" name="fara-lactate" value="da"> Fără lactate
+                    </td>
+                    <td>
+                        <input type="checkbox" name="fotbal" value="da"> Fotbal<br>
+                        <input type="checkbox" name="inot" value="da"> Înot<br>
+                        <input type="checkbox" name="ciclism" value="da"> Ciclism
+                    </td>
+                    <td>
+                        <input type="radio" name="camera" value="single" checked> 3 paturi<br>
+                        <input type="radio" name="camera" value="dubla"> 4 paturi<br>
+                        <input type="radio" name="camera" value="tripla"> 6 paturi<br>
+                        <input type="radio" id="camera-altele" name="camera"> Altele
+                        <input type="number" id="numar-paturi" name="numar-paturi" min="1" max="12">                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <center>
+            <input type="submit" value="Trimite" disabled>
+            <input type="reset" value="Resetează">
+        </center>
+    </form>
+    <fieldset>
+        <legend><h6>Listă echipamente necesare</h6></legend>
+        <p><i>Listă obligatorie de obiecte</i></p>
+        <ul>
+            <li>Îmbrăcăminte adecvată
+                <ol type="number">
+                    <li>Pantaloni
+                        <ul type="square">
+                            <li>Scurți</li>
+                            <li>Lungi</li>
+                        </ul>
+                    </li>
+                    <li>Tricouri</li>
+                </ol>
+            </li>
+            <li>Încălțăminte sportivă</li>
+            <li>Accesorii
+                <ol type="A" start="24">
+                    <li>Lanternă</li>
+                    <li>Chibrite</li>
+                    <li>Rucsac</li>
+                </ol>
+            </li>
+        </ul>
+    </fieldset>
+    <br>
+    <center>
+        <img src="tabara.jpg" alt="Tabăra de vară" width="600" height="400">
+    </center>
+</body>
+</html>
+
+
+<!--   şi (absolut toate) 
+următoarele atribute:       
+max    -->
