@@ -1,25 +1,31 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Lab1</title>
 </head>
+
 <body bgcolor="#f0f0f0">
-    <center><h1>Formular de Înscriere</h1></center>
-    <center><h2>pentru tabăra de vară</h2></center>
+    <center>
+        <h1>Formular de Înscriere</h1>
+    </center>
+    <center>
+        <h2>pentru tabăra de vară</h2>
+    </center>
     <form method="post" action="#">
         <fieldset>
-            <legend><h3>Informații Personale</h3></legend>
+            <legend>Informații Personale</legend>
             <table border="1" width="100%">
                 <tr>
                     <th>
-                        <a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a>
+                        <h3><a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a></h3>
                     </th>
                     <th>
-                        Sex
+                        <h4>Sex</h4>
                     </th>
                     <th>
-                        Data nașterii
+                        <h5>Data nașterii</h5>
                     </th>
                 </tr>
                 <tr>
@@ -39,52 +45,53 @@
                     </td>
                     <td valign="top">
                         <div>
-                            <label for="date"><b>Alege data nașterii</b></label>
-                            <input type="date" id="data" name="data">
+                            <label for="data"><b>Alege data nașterii</b></label>
+                            <input type="text" id="data" name="data">
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <th colspan="3">Adresă</th>
+                    <th colspan="3">
+                        <h6>Adresă</h6>
+                    </th>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <fieldset>
-                            <table align="center" border="5" width="40%">
-                                <tr>
-                                    <td>
-                                        <label for="oras"><strong>Oraș:</strong></label>
-                                        <input type="text" id="oras" name="oras" maxlength="25">
-                                    </td>
-                                    <td>
-                                        <label for="strada"><strong>Stradă:</strong></label>
-                                        <input type="text" id="strada" name="strada" maxlength="25">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="judet"><strong>Județ:</strong></label>
-                                        <input type="text" id="judet" name="judet" maxlength="25">
-                                    </td>
-                                    <td>
-                                        <label for="numar"><strong>Număr:</strong></label>
-                                        <input type="number" id="numar" name="numar" maxlength="25">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="cod-postal"><strong>Cod Poștal:</strong></label>
-                                        <input type="number" id="cod-postal" name="cod-postal" maxlength="10" step="1">
-                                    </td>
-                                </tr>
-                            </table>
-                        </fieldset>
+                        <table align="center" border="5" width="40%">
+                            <tr>
+                                <td>
+                                    <label for="oras"><strong>Oraș:</strong></label>
+                                    <input type="text" id="oras" name="oras" maxlength="25">
+                                </td>
+                                <td>
+                                    <label for="strada"><strong>Stradă:</strong></label>
+                                    <input type="text" id="strada" name="strada" maxlength="25">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="judet"><strong>Județ:</strong></label>
+                                    <input type="text" id="judet" name="judet" maxlength="25">
+                                </td>
+                                <td>
+                                    <label for="numar"><strong>Număr:</strong></label>
+                                    <input type="text" id="numar" name="numar" maxlength="25">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="cod-postal"><strong>Cod Poștal:</strong></label>
+                                    <input type="text" id="cod-postal" name="cod-postal" maxlength="10">
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
             </table>
         </fieldset>
+
         <fieldset>
-            <legend><h4>Opțiuni Tabără</h4></legend>
+            <legend>Opțiuni Tabără</legend>
             <label>Tip de tabără:</label>
             <select name="tip-tabara" multiple>
                 <option value="aventura">Aventură</option>
@@ -95,8 +102,9 @@
             <label for="observatii">Observații:</label>
             <textarea id="observatii" name="observatii" rows="4" cols="50" readonly></textarea>
         </fieldset>
+
         <fieldset>
-            <legend><h5>Preferințe</h5></legend>
+            <legend>Preferințe</legend>
             <table border="1" width="100%">
                 <tr>
                     <th>Alimentare</th>
@@ -119,23 +127,28 @@
                         <input type="radio" name="camera" value="dubla"> 4 paturi<br>
                         <input type="radio" name="camera" value="tripla"> 6 paturi<br>
                         <input type="radio" id="camera-altele" name="camera"> Altele
-                        <input type="number" id="numar-paturi" name="numar-paturi" min="1" max="12">                    </td>
+                        <input type="text" id="numar-paturi" name="numar-paturi">
+                    </td>
                 </tr>
             </table>
         </fieldset>
+
         <br>
         <center>
             <input type="submit" value="Trimite" disabled>
             <input type="reset" value="Resetează">
         </center>
     </form>
+
     <fieldset>
-        <legend><h6>Listă echipamente necesare</h6></legend>
+        <legend>Listă echipamente necesare</legend>
         <p><i>Listă obligatorie de obiecte</i></p>
         <ul>
-            <li>Îmbrăcăminte adecvată
+            <li>
+                Îmbrăcăminte adecvată
                 <ol type="number">
-                    <li>Pantaloni
+                    <li>
+                        Pantaloni
                         <ul type="square">
                             <li>Scurți</li>
                             <li>Lungi</li>
@@ -145,7 +158,8 @@
                 </ol>
             </li>
             <li>Încălțăminte sportivă</li>
-            <li>Accesorii
+            <li>
+                Accesorii
                 <ol type="A" start="24">
                     <li>Lanternă</li>
                     <li>Chibrite</li>
@@ -159,9 +173,5 @@
         <img src="tabara.jpg" alt="Tabăra de vară" width="600" height="400">
     </center>
 </body>
+
 </html>
-
-
-<!--   şi (absolut toate) 
-următoarele atribute:       
-max    -->
