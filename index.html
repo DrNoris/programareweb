@@ -15,26 +15,26 @@
     <form method="post" action="#">
         <fieldset>
             <legend>Informații Personale</legend>
-            <table border="1" width="100%">
+            <table>
                 <tr>
                     <th><a href="https://dexonline.ro/intrare/nume/38239" target="_blank">Nume</a></th>
                     <th>Sex</th>
                     <th>Data nașterii</th>
                 </tr>
                 <tr>
-                    <td valign="top">
+                    <td>
                         <label for="prenume"><strong>Prenume:</strong></label>
                         <input type="text" id="prenume" name="prenume" maxlength="30" size="20">
                         <label for="nume"><strong>Nume:</strong></label>
                         <input type="text" id="nume" name="nume" maxlength="20" size="40">
                     </td>
-                    <td valign="top">
+                    <td>
                         <input type="radio" id="masculin" name="sex" value="masculin">
                         <label for="masculin">Masculin</label>
                         <input type="radio" id="feminin" name="sex" value="feminin">
                         <label for="feminin">Feminin</label>
                     </td>
-                    <td valign="top">
+                    <td>
                         <label for="data"><b>Alege data nașterii</b></label>
                         <input type="date" id="data" name="data">
                     </td>
@@ -45,7 +45,7 @@
                 <tr>
                     <td colspan="3">
                         <fieldset>
-                            <table align="center" border="5" width="40%">
+                            <table>
                                 <tr>
                                     <td>
                                         <label for="oras"><strong>Oraș:</strong></label>
@@ -55,6 +55,8 @@
                                         <label for="strada"><strong>Stradă:</strong></label>
                                         <input type="text" id="strada" name="strada" maxlength="25">
                                     </td>
+                                    <td>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -63,13 +65,19 @@
                                     </td>
                                     <td>
                                         <label for="numar"><strong>Număr:</strong></label>
-                                        <input type="number" id="numar" name="numar" maxlength="25">
+                                        <input type="text" id="numar" name="numar" maxlength="25">
+                                    </td>
+                                    <td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <label for="cod-postal"><strong>Cod Poștal:</strong></label>
-                                        <input type="number" id="cod-postal" name="cod-postal" maxlength="10" step="1">
+                                        <input type="number" id="cod-postal" name="cod-postal" step="1">
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
                                     </td>
                                 </tr>
                             </table>
@@ -94,7 +102,7 @@
 
         <fieldset>
             <legend>Preferințe</legend>
-            <table border="1" width="100%">
+            <table>
                 <tr>
                     <th>Alimentare</th>
                     <th>Sportive</th>
@@ -123,10 +131,8 @@
         </fieldset>
 
         <br>
-        <center>
             <input type="submit" value="Trimite" disabled>
             <input type="reset" value="Resetează">
-        </center>
     </form>
 
     <fieldset>
@@ -134,9 +140,9 @@
         <p><i>Listă obligatorie de obiecte</i></p>
         <ul>
             <li>Îmbrăcăminte adecvată
-                <ol type="number">
+                <ol type="1">
                     <li>Pantaloni
-                        <ul type="square">
+                        <ul>
                             <li>Scurți</li>
                             <li>Lungi</li>
                         </ul>
@@ -156,9 +162,7 @@
     </fieldset>
 
     <br>
-    <center>
         <img src="tabara.jpg" alt="Tabăra de vară" width="600" height="400">
-    </center>
 </body>
 
 </html>
